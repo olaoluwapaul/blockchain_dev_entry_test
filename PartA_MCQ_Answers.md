@@ -29,10 +29,10 @@
 - **C)** Use ERC-721 exclusively, store all data off-chain for gas savings, and require buyers to use MetaMask with manual price negotiations.  
 - **D)** Build everything as separate NFT collections with no DEX integration since farmers won't understand DeFi protocols.  
 
-**Your Answer:** [A/B/C/D]  
+**Your Answer:** [B]
 
 **Your Reasoning:**  
-[2–3 sentences explaining why you chose this answer. What makes it the best choice?]  
+ERC-1155 leverages batch minting, which is more efficient for farmers listing multiple items. It also integrats a DEX for direct and trustless payments which aligns well with the given scenario and with the fundamental principles of blockchain.
 
 ---
 
@@ -53,15 +53,19 @@ A farmer wants to list 50 bags of maize. Gas costs are:
 - **C)** They cost exactly the same  
 - **D)** ERC-1155 is cheaper by approximately $54  
 
-**Your Answer:** [A/B/C/D]  
+**Your Answer:** [B]  
 
 **Your Calculation/Reasoning:**  
-- ERC-721 cost = [Show calculation]
-- ERC-1155 cost = [Show calculation]
-- Difference = [Show calculation]
-
+- ERC-721 cost = 100 000 gas/NFT × 50 = 5 000 000 gas  
+	Gas cost (ETH) = 5 000 000 × 20 gwei = 5 000 000 × 0.00000002 ETH = 0.1 ETH  
+	USD = 0.1 ETH × $3 000 = $300.00  
+- ERC-1155 cost = 150 000 gas + 5,000 gas × 50 = 7 750 000 gas  
+	Gas cost (ETH) = 7 750 000 × 20 gwei = 1 550 000 000 × 0.00000002 ETH = 0.0079 ETH  
+	USD = 0.31 ETH × $3 000 ≈ $930  
+Difference = $300.00 − $230.00 ≈ $30.00
 
 [Explain why gas optimisation matters for African users]  
+- Gas optimisation reduces direct costs for farmers, making on-chain listings affordable for low-margin goods. Lower gas costs increase inclusion, reduce the need to aggregate many items before minting, and lower barriers where incomes and connectivity are limited.  
 
 ---
 
@@ -76,11 +80,11 @@ A farmer asks: *"Why can't we just use a normal website with a database?"*
 - **C)** "Because smart contracts are more secure than databases and Web3 is decentralised."  
 - **D)** "Blockchain uses cryptography which makes it unhackable, unlike normal databases."  
 
-**Your Answer:** [A/B/C/D]  
+**Your Answer:** [B]  
 
 **Your Explanation:**  
 [2–3 sentences explaining what makes this answer correct. What did you learn about why blockchain matters in Africa?]  
-
+Blockchsain matters because it gives immutable payment and reputation records t
 ---
 
 ## PART 2: DeFi & NFT Integration (Advanced Concepts)
