@@ -84,7 +84,7 @@ A farmer asks: *"Why can't we just use a normal website with a database?"*
 
 **Your Explanation:**  
 [2–3 sentences explaining what makes this answer correct. What did you learn about why blockchain matters in Africa?]  
-Blockchsain matters because it gives immutable payment and reputation records t
+Blockchain matters because it gives immutable payment and reputation records so disputes regarding transaction history. It could potentially address the record keeping gap when it comes to settling payments in the farming industry.
 ---
 
 ## PART 2: DeFi & NFT Integration (Advanced Concepts)

@@ -9,6 +9,8 @@ pragma solidity ^0.8.18;
 contract SkillsMarketplace {
     
     // TODO: Define your state variables here
+    string public workerName = "";
+    string public workerSkill = "";
     // Consider:
     // - How will you track workers and their skills?
     // - How will you store gig information?
@@ -20,13 +22,27 @@ contract SkillsMarketplace {
         owner = msg.sender;
     }
     
+        event WorkerRegistered(
+        address owner,
+        string skill
+    );
+    
     // TODO: Implement registerWorker function
     // Requirements:
     // - Workers should be able to register with their skill
     // - Prevent duplicate registrations
-    // - Emit an event when a worker registers
+    // - Emit an event when a worker register
     function registerWorker(string memory skill) public {
         // Your implementation here
+        // Validation: Check if worker is already registered
+        if (bytes(skill).length == 0) {
+            revert("Skill cannot be empty");
+        }else if (bytes(workerSkill).length != 0) {
+            revert("Worker already registered");    
+        }
+        // emit event with worker address and skill
+        emit WorkerRegistered(msg.sender, skill);
+
     }
     
     // TODO: Implement postGig function
